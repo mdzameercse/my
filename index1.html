@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Zameer | Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f7fa;
+            color: #333;
+        }
+
+        header {
+            background: #007bff;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        section {
+            margin: 50px 0;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .skills, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .skill, .project {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill h3, .project h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact-form button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2em;
+            border-radius: 5px;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Md Zameer</h1>
+            <p>Software Developer | CSE Student | Aspiring Data Scientist</p>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I am Md Zameer, a passionate computer science student at Rajiv Gandhi University of Knowledge and Technology. I specialize in web development, data science, and machine learning. I enjoy building innovative solutions to real-world problems and continuously learning new technologies to enhance my skills.</p>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill">
+                <h3>Programming</h3>
+                <p>Java, Python, C++, JavaScript, SQL</p>
+            </div>
+            <div class="skill">
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript, React.js, JSP, Node.js</p>
+            </div>
+            <div class="skill">
+                <h3>Machine Learning</h3>
+                <p>TensorFlow, PyTorch, Scikit-learn</p>
+            </div>
+            <div class="skill">
+                <h3>Cloud Technologies</h3>
+                <p>AWS, Google Cloud</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Smart Education Platform</h3>
+                <p>A web-based learning platform designed to help students learn more effectively with personalized learning paths and real-time feedback.</p>
+            </div>
+            <div class="project">
+                <h3>ISL to Text and Speech Translator</h3>
+                <p>A real-time Indian Sign Language translation solution that converts ISL gestures into text and speech, aiding communication for the deaf community.</p>
+            </div>
+            <div class="project">
+                <h3>Community Health Clinics</h3>
+                <p>A telemedicine-powered solution to improve healthcare access in underserved areas using mobile health clinics.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Md Zameer | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Basic form validation (You can add more features here)
+        const form = document.querySelector('.contact-form');
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Message sent!');
+        });
+    </script>
+
+</body>
+
+</html>
+
