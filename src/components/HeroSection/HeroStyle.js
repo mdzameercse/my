@@ -15,7 +15,8 @@ import Experience from "./components/Experience";
 import Education from "./components/Education";
 import ProjectDetails from "./components/ProjectDetails";
 
-import './App.css';
+import '../../App.css'; // or '../App.css' depending on your folder depth
+
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
